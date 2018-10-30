@@ -41,6 +41,27 @@ int UtPod::addSong(Song const &s) {
 }
 
 int UtPod::removeSong(Song const &s) {
+    /*I don't if this will work so I wrote it and commented it out.
+     *
+     * SongNode *temp = songs;
+     * SongNode *current = songs;
+     * while(temp.s != s){
+     * current = temp;
+     * temp = temp.next;
+     * if (temp == NULL){
+     * return -1
+     * }
+     * }
+     * current.next = temp.next;
+     * delete temp;
+     * return 0;
+     *
+     *
+     *
+     *
+     *
+     *
+     */
     return 1;
 }
 
