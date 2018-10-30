@@ -33,7 +33,9 @@ int UtPod::addSong(Song const &s) {
                 current->next = temp;
                 temp->next = nullptr;
             }
+            return 0;
         }
+        return -1;
     }
 
 }
@@ -65,11 +67,11 @@ int UtPod::getRemainingMemory() {
 }
 
 UtPod::~UtPod() {
-    /*current = head;
-     * while(current != nulptr){
-     * current = current.next
-     * delete head;
-     * head = current; 
-     *
-     */
+
+    SongNode *current = songs;
+    while (current != nullptr){
+        current = current->next;
+        delete songs;
+        songs = current;
+    }
 }
