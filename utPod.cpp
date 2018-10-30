@@ -16,20 +16,26 @@ UtPod::UtPod(int size){
 }
 
 int UtPod::addSong(Song const &s) {
-    if (s.getArtist() == "" || s.getTitle() == "" || s.getSize() < 1) {
+    if (s.getArtist() == "" || s.getTitle() == "" || s.getSize()<1){
         return -1;
-    } else{
-        SongNode *temp = new SongNode;
-        SongNode *current = new SongNode;
-        temp = songs;
-        current = songs;
-        temp->s = s;
-        while (songs != nullptr){
-
+    }else{
+        if(memSize - s.getSize() >= 0){
+            SongNode *temp = songs;
+            temp = new SongNode;
+            temp->s = s;
+            if (songs == nullptr){
+                songs = temp;
+            }else {
+                SongNode *current = songs;
+                while (current->next != nullptr){
+                    current = current->next;
+                }
+                current->next = temp;
+                temp->next = nullptr;
+            }
         }
-
     }
-        return 0;
+
 }
 
 int UtPod::removeSong(Song const &s) {

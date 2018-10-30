@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/zanefreeman/Downloads/UtPod Iteration 2/utPod/Song.h
+/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/Song.h
 string
 -
 iostream
 -
 
-/Users/zanefreeman/Downloads/UtPod Iteration 2/utPod/utPod.cpp
+/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/utPod.cpp
 cstdlib
 -
 iostream
@@ -20,21 +20,21 @@ iostream
 string
 -
 utPod.h
-/Users/zanefreeman/Downloads/UtPod Iteration 2/utPod/utPod.h
+/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/utPod.h
 
-/Users/zanefreeman/Downloads/UtPod Iteration 2/utPod/utPod.h
+/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/utPod.h
 string
 -
 iostream
 -
 Song.h
-/Users/zanefreeman/Downloads/UtPod Iteration 2/utPod/Song.h
+/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/Song.h
 
-/Users/zanefreeman/Downloads/UtPod Iteration 2/utPod/utPod_driver.cpp
+/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/utPod_driver.cpp
 cstdlib
 -
 iostream
 -
 utPod.h
-/Users/zanefreeman/Downloads/UtPod Iteration 2/utPod/utPod.h
+/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/utPod.h
 
