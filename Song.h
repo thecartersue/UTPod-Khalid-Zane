@@ -14,46 +14,72 @@ private:
 public:
 
     Song(){
-
+        artist = "";
+        title = "";
+        size = 0;
     }
-    Song(string ,string ,int){
-
+    Song(string newArtist ,string newTitle , int newSize){
+        artist = newArtist;
+        title = newTitle;
+        size = newSize;
     }
     //Artist
-    string getArtist() const{
-        return "Holder";
+    string getArtist(Song const &s) const{
+        return s.artist;
     }
-    void setArtist(string){
 
+    void setArtist(string newArtist){
+        artist = newArtist;
     }
 
     //Title
-    string getTitle() const{
-        return "Holder";
+    string getTitle(Song const &s) const{
+        return s.title;
     }
-    void setTitle(string){
-
+    void setTitle(string newTitle){
+        title = newTitle;
     }
 
     //Size
-    int getSize() const{
-        return 1;
+    int getSize(Song const &s) const{
+        return s.size;
     }
-    void setSize(int){
-
+    void setSize(int newSize){
+        size = newSize;
     }
 
     //Operators
-    bool operator > (const Song &){
-        return 0;
+    bool operator > (Song const &rhs) {
+        if (artist != rhs.artist) {
+            return (artist < rhs.artist);
+        } else {
+            if (title != rhs.title) {
+                return (title < rhs.title);
+            } else {
+                return (size < rhs.size);
+            }
+        }
     }
-    bool operator < (const Song &){
-        return 0;
+
+    bool operator < (Song const &rhs) {
+        if (artist != rhs.artist) {
+            return (artist > rhs.artist);
+        } else {
+            if (title != rhs.title) {
+                return (title > rhs.title);
+            } else {
+                return (size > rhs.size);
+            }
+        }
     }
-    bool operator == (const Song &){
-        return 0;
+    bool operator == (Song const &rhs) {
+        if (artist == rhs.artist && title == rhs.title && size == rhs.size) {
+            return true;
+        } else return false;
     }
     //Destructor
-    ~Song(){};
+    ~Song(){
+
+    };
 };
 
