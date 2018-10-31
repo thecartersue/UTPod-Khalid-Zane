@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane
+# Install script for directory: /Users/KhalidIMRTL/Desktop/FALL18/EE312/utPod
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/KhalidIMRTL/Desktop/FALL18/EE312/utPod/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
