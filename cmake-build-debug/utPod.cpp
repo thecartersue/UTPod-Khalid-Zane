@@ -71,7 +71,40 @@ void UtPod::showSongList() {
 }
 
 void UtPod::sortSongList() {
+    SongNode *tempSort = songs;
+    string tempArtist, tempTitle;
+    int counter = 0, tempSize = 0;
+    //get number of songs
+    while(tempSort!= nullptr){
+        tempSort = tempSort->next;
+        counter++;
+    }
+    tempSort = songs;
+    for(int j = 0; j < counter ; j++){
+        while(tempSort->next != nullptr){
+            if(tempSort->s > tempSort->next->s){
+                tempArtist = tempSort->s.getArtist(tempSort->s);
+                tempTitle = tempSort->s.getTitle(tempSort->s);
+                tempSize = tempSort->s.getSize(tempSort->s);
 
+                //change the trailing node
+                tempSort->s.setArtist(tempSort->next->s.getArtist(tempSort->next->s));
+                tempSort->s.setTitle(tempSort->next->s.getTitle(tempSort->next->s));
+                tempSort->s.setSize(tempSort->next->s.getSize(tempSort->next->s));
+
+                //change the first node
+                tempSort->next->s.setArtist(tempArtist);
+                tempSort->next->s.setTitle(tempTitle);
+                tempSort->next->s.setSize(tempSize);
+
+                tempSort = tempSort->next;
+            }else{
+                tempSort = tempSort->next;
+            }
+        }
+        //repeat
+        tempSort = songs;
+    }
 }
 
 void UtPod::clearMemory() {
