@@ -29,6 +29,7 @@ public:
     }
 
     void setArtist(string newArtist){
+        artist = newArtist;
     }
 
     //Title
@@ -36,27 +37,49 @@ public:
         return s.title;
     }
     void setTitle(string newTitle){
+        title = newTitle;
     }
 
     //Size
     int getSize(Song const &s) const{
         return s.size;
     }
-    void setSize(int){
-
+    void setSize(int newSize){
+        size = newSize;
     }
 
     //Operators
-    bool operator > (const Song &){
-        return 0;
+    bool operator > (Song const &rhs) {
+        if (artist != rhs.artist) {
+            return (artist < rhs.artist);
+        } else {
+            if (title != rhs.title) {
+                return (title < rhs.title);
+            } else {
+                return (size < rhs.size);
+            }
+        }
     }
-    bool operator < (const Song &){
-        return 0;
+
+    bool operator < (Song const &rhs) {
+        if (artist != rhs.artist) {
+            return (artist > rhs.artist);
+        } else {
+            if (title != rhs.title) {
+                return (title > rhs.title);
+            } else {
+                return (size > rhs.size);
+            }
+        }
     }
-    bool operator == (const Song &){
-        return 0;
+    bool operator == (Song const &rhs) {
+        if (artist == rhs.artist && title == rhs.title && size == rhs.size) {
+            return true;
+        } else return false;
     }
     //Destructor
-    ~Song(){};
+    ~Song(){
+
+    };
 };
 

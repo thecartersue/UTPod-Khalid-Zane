@@ -1,6 +1,9 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include <vector>
+#include <time.h>
+#include <stdlib.h>
 #include "utPod.h"
 using namespace std;
 
