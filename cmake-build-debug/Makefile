@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane
+CMAKE_SOURCE_DIR = "/Users/zanefreeman/Downloads/utPod copy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug/CMakeFiles /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles" "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,71 +111,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named utPod
+# Target rules for targets named utPod_copy
 
 # Build rule for target.
-utPod: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 utPod
-.PHONY : utPod
+utPod_copy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 utPod_copy
+.PHONY : utPod_copy
 
 # fast build rule for target.
-utPod/fast:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/build
-.PHONY : utPod/fast
+utPod_copy/fast:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/build
+.PHONY : utPod_copy/fast
 
-utPod.o: utPod.cpp.o
+UtPod.o: UtPod.cpp.o
 
-.PHONY : utPod.o
-
-# target to build an object file
-utPod.cpp.o:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/utPod.cpp.o
-.PHONY : utPod.cpp.o
-
-utPod.i: utPod.cpp.i
-
-.PHONY : utPod.i
-
-# target to preprocess a source file
-utPod.cpp.i:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/utPod.cpp.i
-.PHONY : utPod.cpp.i
-
-utPod.s: utPod.cpp.s
-
-.PHONY : utPod.s
-
-# target to generate assembly for a file
-utPod.cpp.s:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/utPod.cpp.s
-.PHONY : utPod.cpp.s
-
-utPod_driver.o: utPod_driver.cpp.o
-
-.PHONY : utPod_driver.o
+.PHONY : UtPod.o
 
 # target to build an object file
-utPod_driver.cpp.o:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/utPod_driver.cpp.o
-.PHONY : utPod_driver.cpp.o
+UtPod.cpp.o:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/UtPod.cpp.o
+.PHONY : UtPod.cpp.o
 
-utPod_driver.i: utPod_driver.cpp.i
+UtPod.i: UtPod.cpp.i
 
-.PHONY : utPod_driver.i
+.PHONY : UtPod.i
 
 # target to preprocess a source file
-utPod_driver.cpp.i:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/utPod_driver.cpp.i
-.PHONY : utPod_driver.cpp.i
+UtPod.cpp.i:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/UtPod.cpp.i
+.PHONY : UtPod.cpp.i
 
-utPod_driver.s: utPod_driver.cpp.s
+UtPod.s: UtPod.cpp.s
 
-.PHONY : utPod_driver.s
+.PHONY : UtPod.s
 
 # target to generate assembly for a file
-utPod_driver.cpp.s:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/utPod_driver.cpp.s
-.PHONY : utPod_driver.cpp.s
+UtPod.cpp.s:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/UtPod.cpp.s
+.PHONY : UtPod.cpp.s
+
+UtPod_Driver.o: UtPod_Driver.cpp.o
+
+.PHONY : UtPod_Driver.o
+
+# target to build an object file
+UtPod_Driver.cpp.o:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/UtPod_Driver.cpp.o
+.PHONY : UtPod_Driver.cpp.o
+
+UtPod_Driver.i: UtPod_Driver.cpp.i
+
+.PHONY : UtPod_Driver.i
+
+# target to preprocess a source file
+UtPod_Driver.cpp.i:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/UtPod_Driver.cpp.i
+.PHONY : UtPod_Driver.cpp.i
+
+UtPod_Driver.s: UtPod_Driver.cpp.s
+
+.PHONY : UtPod_Driver.s
+
+# target to generate assembly for a file
+UtPod_Driver.cpp.s:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/UtPod_Driver.cpp.s
+.PHONY : UtPod_Driver.cpp.s
+
+song.o: song.cpp.o
+
+.PHONY : song.o
+
+# target to build an object file
+song.cpp.o:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/song.cpp.o
+.PHONY : song.cpp.o
+
+song.i: song.cpp.i
+
+.PHONY : song.i
+
+# target to preprocess a source file
+song.cpp.i:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/song.cpp.i
+.PHONY : song.cpp.i
+
+song.s: song.cpp.s
+
+.PHONY : song.s
+
+# target to generate assembly for a file
+song.cpp.s:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/song.cpp.s
+.PHONY : song.cpp.s
 
 # Help Target
 help:
@@ -185,13 +212,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... utPod"
-	@echo "... utPod.o"
-	@echo "... utPod.i"
-	@echo "... utPod.s"
-	@echo "... utPod_driver.o"
-	@echo "... utPod_driver.i"
-	@echo "... utPod_driver.s"
+	@echo "... utPod_copy"
+	@echo "... UtPod.o"
+	@echo "... UtPod.i"
+	@echo "... UtPod.s"
+	@echo "... UtPod_Driver.o"
+	@echo "... UtPod_Driver.i"
+	@echo "... UtPod_Driver.s"
+	@echo "... song.o"
+	@echo "... song.i"
+	@echo "... song.s"
 .PHONY : help
 
 

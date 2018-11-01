@@ -1,6 +1,13 @@
 cmake_minimum_required(VERSION 3.12)
-project(utPod)
+project(utPod_copy)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(utPod utPod_driver.cpp utPod.h utPod.cpp Song.h)
+include_directories(.)
+
+add_executable(utPod_copy
+        song.cpp
+        song.h
+        UtPod.cpp
+        UtPod.h
+        UtPod_Driver.cpp)

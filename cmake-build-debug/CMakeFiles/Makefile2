@@ -59,45 +59,45 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane
+CMAKE_SOURCE_DIR = "/Users/zanefreeman/Downloads/utPod copy"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/utPod.dir
+# Target rules for target CMakeFiles/utPod_copy.dir
 
 # All Build rule for target.
-CMakeFiles/utPod.dir/all:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/depend
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target utPod"
-.PHONY : CMakeFiles/utPod.dir/all
+CMakeFiles/utPod_copy.dir/all:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/depend
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target utPod_copy"
+.PHONY : CMakeFiles/utPod_copy.dir/all
 
 # Include target in all.
-all: CMakeFiles/utPod.dir/all
+all: CMakeFiles/utPod_copy.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/utPod.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/utPod.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zanefreeman/Documents/GitHub/UTPod-Khalid-Zane/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/utPod.dir/rule
+CMakeFiles/utPod_copy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles" 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/utPod_copy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/utPod_copy.dir/rule
 
 # Convenience name for target.
-utPod: CMakeFiles/utPod.dir/rule
+utPod_copy: CMakeFiles/utPod_copy.dir/rule
 
-.PHONY : utPod
-
-# clean rule for target.
-CMakeFiles/utPod.dir/clean:
-	$(MAKE) -f CMakeFiles/utPod.dir/build.make CMakeFiles/utPod.dir/clean
-.PHONY : CMakeFiles/utPod.dir/clean
+.PHONY : utPod_copy
 
 # clean rule for target.
-clean: CMakeFiles/utPod.dir/clean
+CMakeFiles/utPod_copy.dir/clean:
+	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/clean
+.PHONY : CMakeFiles/utPod_copy.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/utPod_copy.dir/clean
 
 .PHONY : clean
 

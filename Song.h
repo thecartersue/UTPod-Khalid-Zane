@@ -13,42 +13,35 @@ private:
 
 public:
 
-    Song(){
-        artist = "";
-        title = "";
-        size = 0;
-    }
-    Song(string newArtist ,string newTitle , int newSize){
-        artist = newArtist;
-        title = newTitle;
-        size = newSize;
-    }
+    Song();
+    Song(string newArtist ,string newTitle , int newSize);
     //Artist
-    string getArtist(Song const &s) const{
-        return s.artist;
+//Artist
+    string getArtist() const{
+        return artist;
     }
 
     void setArtist(string newArtist){
         artist = newArtist;
     }
 
-    //Title
-    string getTitle(Song const &s) const{
-        return s.title;
+//Title
+    string getTitle() const{
+        return title;
     }
     void setTitle(string newTitle){
         title = newTitle;
     }
 
-    //Size
-    int getSize(Song const &s) const{
-        return s.size;
+//Size
+    int getSize() const{
+        return size;
     }
     void setSize(int newSize){
         size = newSize;
     }
 
-    //Operators
+//Operators
     bool operator > (Song const &rhs) {
         if (artist != rhs.artist) {
             return (artist < rhs.artist);
@@ -78,8 +71,5 @@ public:
         } else return false;
     }
     //Destructor
-    ~Song(){
-
-    };
 };
 

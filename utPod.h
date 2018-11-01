@@ -1,7 +1,7 @@
 // Created by Khalid Ahmad on 10/29/18.
 #include <string>
 #include <iostream>
-#include "Song.h"
+#include "song.h"
 //UtPod class declaration
 class UtPod
 {
@@ -45,7 +45,6 @@ public:
     */
 
     int addSong(Song const &s);
-
 
     /* FUNCTION - int removeSong
      * attempts to remove a song from the UtPod
@@ -117,7 +116,7 @@ public:
        output parms -
     */
 
-    int getTotalMemory() {
+    int getTotalMemory(){
         return memSize;
     }
 
@@ -135,6 +134,5 @@ public:
 
 
     ~UtPod();
-
 };
 
