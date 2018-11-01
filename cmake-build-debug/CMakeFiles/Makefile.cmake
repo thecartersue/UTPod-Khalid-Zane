@@ -122,5 +122,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/utPod_copy.dir/DependInfo.cmake"
+  "CMakeFiles/UTPOD_LINUX.dir/DependInfo.cmake"
   )

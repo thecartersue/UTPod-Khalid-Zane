@@ -59,45 +59,45 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/zanefreeman/Downloads/utPod copy"
+CMAKE_SOURCE_DIR = "/Users/zanefreeman/Desktop/UTPOD LINUX"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/zanefreeman/Desktop/UTPOD LINUX/cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/utPod_copy.dir
+# Target rules for target CMakeFiles/UTPOD_LINUX.dir
 
 # All Build rule for target.
-CMakeFiles/utPod_copy.dir/all:
-	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/depend
-	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target utPod_copy"
-.PHONY : CMakeFiles/utPod_copy.dir/all
+CMakeFiles/UTPOD_LINUX.dir/all:
+	$(MAKE) -f CMakeFiles/UTPOD_LINUX.dir/build.make CMakeFiles/UTPOD_LINUX.dir/depend
+	$(MAKE) -f CMakeFiles/UTPOD_LINUX.dir/build.make CMakeFiles/UTPOD_LINUX.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/zanefreeman/Desktop/UTPOD LINUX/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4 "Built target UTPOD_LINUX"
+.PHONY : CMakeFiles/UTPOD_LINUX.dir/all
 
 # Include target in all.
-all: CMakeFiles/utPod_copy.dir/all
+all: CMakeFiles/UTPOD_LINUX.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/utPod_copy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles" 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/utPod_copy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zanefreeman/Downloads/utPod copy/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/utPod_copy.dir/rule
+CMakeFiles/UTPOD_LINUX.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zanefreeman/Desktop/UTPOD LINUX/cmake-build-debug/CMakeFiles" 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/UTPOD_LINUX.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/zanefreeman/Desktop/UTPOD LINUX/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/UTPOD_LINUX.dir/rule
 
 # Convenience name for target.
-utPod_copy: CMakeFiles/utPod_copy.dir/rule
+UTPOD_LINUX: CMakeFiles/UTPOD_LINUX.dir/rule
 
-.PHONY : utPod_copy
-
-# clean rule for target.
-CMakeFiles/utPod_copy.dir/clean:
-	$(MAKE) -f CMakeFiles/utPod_copy.dir/build.make CMakeFiles/utPod_copy.dir/clean
-.PHONY : CMakeFiles/utPod_copy.dir/clean
+.PHONY : UTPOD_LINUX
 
 # clean rule for target.
-clean: CMakeFiles/utPod_copy.dir/clean
+CMakeFiles/UTPOD_LINUX.dir/clean:
+	$(MAKE) -f CMakeFiles/UTPOD_LINUX.dir/build.make CMakeFiles/UTPOD_LINUX.dir/clean
+.PHONY : CMakeFiles/UTPOD_LINUX.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/UTPOD_LINUX.dir/clean
 
 .PHONY : clean
 

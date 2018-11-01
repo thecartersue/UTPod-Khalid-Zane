@@ -1,0 +1,74 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zanefreeman/Desktop/UTPOD LINUX/UtPod.cpp
+iostream
+-
+string
+-
+time.h
+-
+cstdlib
+-
+stdio.h
+-
+stdlib.h
+-
+ctime
+-
+UtPod.h
+/Users/zanefreeman/Desktop/UTPOD LINUX/UtPod.h
+
+/Users/zanefreeman/Desktop/UTPOD LINUX/UtPod.h
+string
+-
+iostream
+-
+song.h
+/Users/zanefreeman/Desktop/UTPOD LINUX/song.h
+
+/Users/zanefreeman/Desktop/UTPOD LINUX/UtPodDriver.cpp
+iostream
+-
+string
+-
+time.h
+-
+cstdlib
+-
+stdio.h
+-
+stdlib.h
+-
+UtPod.h
+/Users/zanefreeman/Desktop/UTPOD LINUX/UtPod.h
+
+/Users/zanefreeman/Desktop/UTPOD LINUX/song.cpp
+iostream
+-
+string
+-
+time.h
+-
+cstdlib
+-
+stdio.h
+-
+stdlib.h
+-
+ctime
+-
+song.h
+/Users/zanefreeman/Desktop/UTPOD LINUX/song.h
+
+/Users/zanefreeman/Desktop/UTPOD LINUX/song.h
+string
+-
+iostream
+-
+
